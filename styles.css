@@ -1,0 +1,153 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+}
+
+:root{
+    --primary-color: #0091AD;
+    --secondary-color: #FFF4E4;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 3.5rem;
+    padding: 0% 10%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 16px;
+}
+
+.navbar a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.cv {
+    border-radius: 30%;
+    width: 40%;
+}
+
+i.fab, i.fas {
+    font-size: 50px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    height: 80px;
+    width: 80px;
+    margin: 0% 36%;
+}
+
+.text-icon {
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.pad-5 {
+    padding: 5%;
+}
+
+.lan {
+    padding: 3%;
+}
+
+p.portfolio-text {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+.button1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.education {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--secondary-color);
+   padding: 2%;
+}
+
+.education p {
+    padding: 10px;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2);
+}
+
+.event {
+    border-radius: 20px;
+    max-width: 450px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.event-right {
+    justify-self: right;  
+}
+
+.event-left {
+    justify-self: left;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-right: 0;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+footer a:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+@media (max-width: 560px){
+    .navbar {
+        padding: 0% 3%;
+    }
+}
+
+
