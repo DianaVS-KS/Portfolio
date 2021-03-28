@@ -73,14 +73,33 @@ i.fab, i.fas {
     padding: 5%;
 }
 
-.lan {
+.pad-3 {
     padding: 3%;
 }
 
 p.portfolio-text {
-    background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+#portfolio
+
+.project {      
     border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+}
+
+.project:nth-child(odd){    
+    background-color: var(--primary-color);  
+}
+
+.project a{
+    text-decoration: none;
+}
+
+.project img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .button1 {
@@ -90,6 +109,11 @@ p.portfolio-text {
     padding: 10px 15px;
     border-radius: 20px;
     border: 0px;
+}
+
+.button1:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .education {
@@ -106,6 +130,7 @@ p.portfolio-text {
 
 .timeline {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2);
 }
 
@@ -116,8 +141,25 @@ p.portfolio-text {
     margin: 20px;
 }
 
+
 .event-right {
     justify-self: right;  
+}
+
+.circle {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    left: 47%;
+    justify-self: center;
+    background-color: var(--secondary-color);
+    z-index:100;
+    align-self: center;
+    padding: 12px 0px;
+    font-weight: 600;
 }
 
 .event-left {
@@ -149,5 +191,33 @@ footer a:hover{
         padding: 0% 3%;
     }
 }
+
+@media (min-width: 768px) and (max-width:991px){
+    .project {      
+        width: 320px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+    .project {      
+        width: 400px;
+    }
+}
+
+@media (min-width: 1200px){
+    .event-left::after {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-left: 3px solid var(--primary-color);
+    }
+    .project {      
+        max-width: 400px;
+    }
+}
+
 
 
