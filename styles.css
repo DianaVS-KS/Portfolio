@@ -10,6 +10,7 @@
 
 body {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 header {
@@ -34,7 +35,7 @@ section {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 600;
-    padding: 16px;
+    padding: 14px;
 }
 
 .navbar a:hover{
@@ -69,12 +70,16 @@ i.fab, i.fas {
     font-size: 40px;
 }
 
-.pad-5 {
-    padding: 5%;
+.pad-3 {
+    padding: 1%;
 }
 
 .pad-3 {
     padding: 3%;
+}
+
+.pad-5 {
+    padding: 5%;
 }
 
 p.portfolio-text {
@@ -153,10 +158,9 @@ p.portfolio-text {
     background-color: var(--secondary-color);
     z-index:100;
     align-self: center;
-    padding: 12px 0px;
+    padding: 10px 0px;
     font-weight: 600;
 }
-
 
 .event-left::after {
     visibility: visible;
@@ -198,12 +202,23 @@ footer a:hover{
 }
 
 @media (max-width: 560px){
-    .navbar {
-        padding: 0% 3%;
+    body {
+        font-size: 1.5rem;
     }
-    
+
+    .navbar {
+        padding: 0% 1%;
+        height: 4rem;
+    }
+
     .period{
-        visibility: hidden;
+        position: relative;
+        align-self: center;
+        left: 0;
+        width: 200px;
+        height: 50px;
+        background-color: transparent;
+        padding: 5px 0px;
     }
     
     .event-right {
@@ -220,8 +235,22 @@ footer a:hover{
 }
 
 @media (min-width: 561px) and (max-width:767px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        padding: 0% 1%;
+        height: 4rem;
+    }
+
     .period{
-        visibility: hidden;
+        position: relative;
+        align-self: center;
+        left: 0;
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
     }
 
     .event-right {
@@ -243,7 +272,12 @@ footer a:hover{
     }
     
     .period{
-        visibility: hidden;
+        position: relative;
+        align-self: center;
+        left: 0;
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
     }
 
     .event-right {
@@ -260,6 +294,8 @@ footer a:hover{
 }
 
 @media (min-width: 992px) and (max-width:1199px){
+
+
     .event {
         width: 350px;
     }
