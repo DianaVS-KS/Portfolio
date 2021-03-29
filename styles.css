@@ -21,6 +21,18 @@ section {
     margin-bottom: 20px;
 }
 
+.pad-3 {
+    padding: 1%;
+}
+
+.pad-3 {
+    padding: 3%;
+}
+
+.pad-5 {
+    padding: 5%;
+}
+
 .navbar {
     background-color: var(--primary-color);
     display: flex;
@@ -70,20 +82,65 @@ i.fab, i.fas {
     font-size: 40px;
 }
 
-.pad-3 {
-    padding: 1%;
-}
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 2%;
+ }
+ 
+ .education p {
+     padding: 10px;
+ }
+ 
+ .timeline {
+     display: grid;
+     position: relative;
+     grid-template-columns: repeat(2);
+ }
+ 
+ .event {
+     border-radius: 20px;
+     max-width: 450px;
+     padding: 20px;
+     margin: 20px;
+ }
 
-.pad-3 {
-    padding: 3%;
-}
+ .event-left::after {
+     visibility: visible;
+     z-index: 1;
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     border-left: 3px solid var(--primary-color);
+ }
+ 
+ .event-right {
+     justify-self: right;  
+ }
+ 
+ .event-left {
+     justify-self: left;
+ }
 
-.pad-5 {
-    padding: 5%;
-}
-
-.portfolio-text {
-    color: var(--secondary-color);
+ .period {
+    visibility: visible;
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    left: 47%;
+    justify-self: center;
+    background-color: var(--secondary-color);
+    z-index:100;
+    align-self: center;
+    padding: 12px 0px;
+    font-weight: 600;
 }
 
 .project {      
@@ -106,6 +163,10 @@ i.fab, i.fas {
     border-top-right-radius: 20px;
 }
 
+.portfolio-text {
+    color: var(--secondary-color);
+}
+
 .button1 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -120,65 +181,8 @@ i.fab, i.fas {
     color: var(--primary-color);
 }
 
-.education {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: var(--secondary-color);
-   padding: 2%;
-}
-
-.education p {
-    padding: 10px;
-}
-
-.timeline {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(2);
-}
-
-.event {
-    border-radius: 20px;
-    max-width: 450px;
-    padding: 20px;
-    margin: 20px;
-}
-
-.period {
-    visibility: visible;
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 90px;
-    border-radius: 20px;
-    border: 2px solid var(--primary-color);
-    left: 47%;
-    justify-self: center;
-    background-color: var(--secondary-color);
-    z-index:100;
-    align-self: center;
-    padding: 12px 0px;
-    font-weight: 600;
-}
-
-.event-left::after {
-    visibility: visible;
-    z-index: 1;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border-left: 3px solid var(--primary-color);
-}
-
-.event-right {
-    justify-self: right;  
-}
-
-.event-left {
-    justify-self: left;
+.hid {
+    display: none;
 }
 
 .footer {
