@@ -82,7 +82,7 @@ i.fab, i.fas {
     padding: 5%;
 }
 
-p.portfolio-text {
+.portfolio-text {
     color: var(--secondary-color);
 }
 
@@ -149,8 +149,8 @@ p.portfolio-text {
     visibility: visible;
     position: absolute;
     content: "";
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 20px;
     border: 2px solid var(--primary-color);
     left: 47%;
@@ -158,7 +158,7 @@ p.portfolio-text {
     background-color: var(--secondary-color);
     z-index:100;
     align-self: center;
-    padding: 10px 0px;
+    padding: 12px 0px;
     font-weight: 600;
 }
 
@@ -295,6 +295,9 @@ footer a:hover{
 
 @media (min-width: 992px) and (max-width:1199px){
 
+    .event img {
+        width:90%;
+    }
 
     .event {
         width: 350px;
