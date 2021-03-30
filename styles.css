@@ -185,6 +185,10 @@ i.fab, i.fas {
     display: none;
 }
 
+.vis {
+    display: inline;
+}
+
 .footer {
     background-color: var(--secondary-color);
     text-align: center;

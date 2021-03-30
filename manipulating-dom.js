@@ -1,14 +1,12 @@
 const showMore = function () {
     const elements = document.getElementsByClassName('hid');
-    // const button = document.getElementsByClassName('button1');
+    const button = document.getElementsByClassName('button1');
+    console.log(elements);
     for(let el of elements){
-        if(el.style.display === 'none'){
-            el.style.display = 'inline';
-            // button.innerText = 'View Less';
-        }
-        else {
-            el.style.display = 'none'; 
-            // button.innerText = 'View More';
-        }
+        if (el.classList.contains('hid')) {
+            el.classList.toggle('hid');
+            el.classList.add('vis');
+            button.innerHTML= 'Show Less';
+          }
     }
 }
