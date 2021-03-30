@@ -21,7 +21,7 @@ section {
     margin-bottom: 20px;
 }
 
-.pad-3 {
+.pad-1 {
     padding: 1%;
 }
 
@@ -314,10 +314,6 @@ footer a:hover{
     .period {
         left: 46%;
     }
-}
-
-@media (min-width: 1200px){
-    
 }
 
 
