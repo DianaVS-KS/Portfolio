@@ -185,9 +185,9 @@ i.fab, i.fas {
     display: none;
 }
 
-.vis {
+/* .vis {
     display: inline;
-}
+} */
 
 .footer {
     background-color: var(--secondary-color);
