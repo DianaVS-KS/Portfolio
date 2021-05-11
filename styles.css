@@ -33,6 +33,16 @@ section {
     padding: 5%;
 }
 
+#to-top{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+
+#to-top i{
+    font-size: 40px;
+}
+
 .navbar {
     background-color: var(--primary-color);
     display: flex;
@@ -82,6 +92,10 @@ i.fab, i.fas {
     font-size: 40px;
 }
 
+.tiny{
+    display: none;
+}
+
 .education {
     display: flex;
     justify-content: center;
@@ -105,6 +119,11 @@ i.fab, i.fas {
      max-width: 450px;
      padding: 20px;
      margin: 20px;
+ }
+
+ .event li {
+    padding-left: 5px;
+    text-align: left;
  }
 
  .event-left::after {
@@ -151,20 +170,32 @@ i.fab, i.fas {
 }
 
 .project:nth-child(odd){    
-    background-color: var(--primary-color);  
+    background-color: var(--primary-color);
+    color: var(--secondary-color);  
 }
 
 .project a{
     text-decoration: none;
 }
 
-.project img {
+.project p{
+    text-align: left;
+}
+
+.project img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.portfolio-text {
+.portfolio-text{
     color: var(--secondary-color);
+}
+
+.project i{
+    text-align: left;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .button1 {
@@ -201,6 +232,7 @@ footer a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 footer a:hover{
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -213,11 +245,24 @@ footer a:hover{
 @media (max-width: 560px){
     body {
         font-size: 1.5rem;
+        /* max-width: 96vw; */
+    }
+
+    #to-top{
+        right: 15px;
+    }
+
+    #to-top i{
+        font-size: 35px;
     }
 
     .navbar {
         padding: 0% 1%;
-        height: 4rem;
+        height: 3.4rem;
+    }
+
+    .navbar a{
+        font-size: 1.1rem;
     }
 
     .period{
@@ -230,6 +275,9 @@ footer a:hover{
         padding: 5px 0px;
     }
     
+    .event{
+        max-width: 420px;
+    }
     .event-right {
         justify-self: center;  
     }
@@ -250,7 +298,11 @@ footer a:hover{
 
     .navbar {
         padding: 0% 1%;
-        height: 4rem;
+        height: 3.4rem;
+    }
+
+    .navbar a{
+        font-size: 1.1rem;
     }
 
     .period{
